@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PowerBI_Sales Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "38631d49-a601-48dc-b470-56b3f2a907b7"
+  }
+}
