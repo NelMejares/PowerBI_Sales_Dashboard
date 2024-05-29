@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 1
       },
       "nodes": [
         {
@@ -19,15 +19,41 @@
             "height": 472,
             "width": 234
           },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 363,
+            "y": 5
+          },
+          "nodeIndex": "Category",
+          "nodeLineageTag": "c537e94c-9f8c-4db1-9d91-6f05080855a3",
+          "size": {
+            "height": 134,
+            "width": 234
+          },
           "zIndex": 4
         },
         {
           "location": {
-            "x": 367,
-            "y": 0
+            "x": 375,
+            "y": 235.5
           },
-          "nodeIndex": "Category",
-          "nodeLineageTag": "c537e94c-9f8c-4db1-9d91-6f05080855a3",
+          "nodeIndex": "Customer",
+          "nodeLineageTag": "a328fda9-088f-4ad1-91e7-7d79a458ce9f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 366,
+            "y": 566.25
+          },
+          "nodeIndex": "Ship Mode",
+          "nodeLineageTag": "bd3462a4-5166-4660-82c1-3b6edd4261de",
           "size": {
             "height": 134,
             "width": 234
@@ -36,41 +62,42 @@
         },
         {
           "location": {
-            "x": 368,
-            "y": 137.5
+            "x": 372,
+            "y": 406.25
           },
-          "nodeIndex": "Customer",
-          "nodeLineageTag": "a328fda9-088f-4ad1-91e7-7d79a458ce9f",
+          "nodeIndex": "Order Priority",
+          "nodeLineageTag": "7e44ebf6-6255-4524-b9ac-8620815ff7bd",
           "size": {
-            "height": 152,
+            "height": 128,
             "width": 234
           },
           "zIndex": 2
         },
         {
           "location": {
-            "x": 370,
-            "y": 427.25
+            "x": 724,
+            "y": 257.625
           },
-          "nodeIndex": "Ship Mode",
-          "nodeLineageTag": "bd3462a4-5166-4660-82c1-3b6edd4261de",
+          "nodeIndex": "Measures Table",
+          "nodeLineageTag": "6a167d95-900d-4a99-a089-1e6be914ffd1",
           "size": {
-            "height": 134,
+            "height": 306,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 7
         },
         {
           "location": {
-            "x": 368,
-            "y": 294.25
+            "x": 644,
+            "y": 0
           },
-          "nodeIndex": "Order Priority",
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "4280dff4-303f-4d59-aba8-a3ed31bfd086",
           "size": {
-            "height": 128,
+            "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         }
       ],
       "name": "All tables",
