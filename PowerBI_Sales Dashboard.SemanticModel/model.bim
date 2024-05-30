@@ -1847,6 +1847,14 @@
             ],
             "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
             "lineageTag": "e720c62e-820a-4035-8bb4-08736e34353e"
+          },
+          {
+            "name": "Category Subtitle",
+            "expression": [
+              "",
+              "\"Sales trend for\" & \" \" & (SELECTEDVALUE(Category[Category]) & \" \" & FORMAT(MAX('Calendar'[Date]), \"YYYY\"))"
+            ],
+            "lineageTag": "1a3e0912-e477-4613-bc89-c2a3d4bd8011"
           }
         ],
         "partitions": [
