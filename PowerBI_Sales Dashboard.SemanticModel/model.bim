@@ -1215,7 +1215,7 @@
             "lineageTag": "51cb8f2f-cdf7-4cdf-acd6-4e5b0c310b68"
           },
           {
-            "name": "Avg. Days to Ship",
+            "name": "Avg. Days to Ships",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -1855,6 +1855,38 @@
               "\"Sales trend for\" & \" \" & (SELECTEDVALUE(Category[Category]) & \" \" & FORMAT(MAX('Calendar'[Date]), \"YYYY\"))"
             ],
             "lineageTag": "1a3e0912-e477-4613-bc89-c2a3d4bd8011"
+          },
+          {
+            "name": "Unique Days",
+            "expression": "DISTINCTCOUNT('Calendar'[Date])",
+            "formatString": "0",
+            "lineageTag": "474a2032-3720-484c-b692-b233d4d1dc9f"
+          },
+          {
+            "name": "Avg. Days to Ship",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR dayship = SUM('Sales Data'[Days to Ship])",
+              "VAR avgship = DIVIDE(dayship,[Unique Days])",
+              "",
+              "RETURN",
+              "avgship"
+            ],
+            "lineageTag": "b7294655-2f71-4508-8313-93a33f16336d"
+          },
+          {
+            "name": "ShipFX",
+            "expression": [
+              "",
+              "IF([Avg. Days to Ship] > 3,  \"Red\", \"Gray\")"
+            ],
+            "lineageTag": "a877d57e-7007-4d80-a40d-b2062157e69d"
           }
         ],
         "partitions": [

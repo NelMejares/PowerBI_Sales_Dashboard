@@ -1,0 +1,22 @@
+DEFINE
+	VAR __DS0Core = 
+		SUMMARIZECOLUMNS(
+			'Calendar'[Month N],
+			'Calendar'[Month No],
+			"Total_Orders", 'Measures Table'[Total Orders],
+			"Orders_Highlight", IGNORE('Measures Table'[Orders Highlight])
+		)
+
+	VAR __DS0PrimaryWindowed = 
+		TOPN(1001, __DS0Core, 'Calendar'[Month No], 1, 'Calendar'[Month N], 1)
+
+EVALUATE
+	ROW(
+	"Orders_Subtitle", 'Measures Table'[Orders Subtitle]
+)
+
+EVALUATE
+	__DS0PrimaryWindowed
+
+ORDER BY
+	'Calendar'[Month No], 'Calendar'[Month N]
